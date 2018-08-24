@@ -23,4 +23,4 @@ EXPOSE 6968 8920 18920
 
 WORKDIR /wicc
 
-CMD ["/wicc/coind", "-datadir=cur", "-daemon"]
+CMD ["/wicc/coind", "-datadir=cur"]
