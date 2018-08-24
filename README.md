@@ -5,5 +5,11 @@ Run waykichain coind in docker!
 1. cd into the home director where conf and data dirs exist
 2. run: ```$sh run-waykicoind-test.sh```
 
+## Lookup Help menu from coind
+```docker exec -it waykicoind-test /wicc/coind -datadir=curr help```
+
+## Stop coind 
+```$/wicc/coind -datadir=cur stop```
+
 ## Test test node
 run ```$docker exec -it waykicoind-test ./coind -datadir=. getpeerinfo```
