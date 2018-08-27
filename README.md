@@ -18,5 +18,5 @@ run ```$docker exec -it waykicoind-test ./coind -datadir=. getpeerinfo```
 
 |Q | A|
 |--|--|
-|How to modify JSON RPC port | Two options: <br> <li>modify WaykiChain.conf <li>modify docker container mapping port |
+|How to modify JSON RPC port | Two options: <br> <li>modify [WaykiChain.conf](https://github.com/WaykiChain/WaykiChain/wiki/WaykiChain.conf) <li>modify docker container mapping port |
 |How to run a testnet | modify WaykiChain.conf by adding ```testnet=1```, otherwise it will run as mainnet |
