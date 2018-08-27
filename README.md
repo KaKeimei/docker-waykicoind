@@ -11,5 +11,12 @@ Run waykichain coind in docker!
 ## Stop coind 
 ```$/wicc/coind -datadir=cur stop```
 
-## Test test node
+## Test
 run ```$docker exec -it waykicoind-test ./coind -datadir=. getpeerinfo```
+
+## Q&A
+
+|Q | A|
+|--|--|
+|How to modify JSON RPC port | Two options: <br> <li>modify WaykiChain.conf <li>modify docker container mapping port |
+|How to run a testnet | modify WaykiChain.conf by adding ```testnet=1```, otherwise it will run as mainnet |
