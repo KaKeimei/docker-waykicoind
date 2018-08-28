@@ -15,10 +15,10 @@ Run waykichain coind in docker!
 2. run: ```$sh run-waykicoind-test.sh```
 
 ## Lookup Help menu from coind
-```docker exec -it waykicoind-test /wicc/coind -datadir=curr help```
+```docker exec -it waykicoind-test /wicc/coind -datadir=. help```
 
 ## Stop coind 
-```$/wicc/coind -datadir=cur stop```
+```$/wicc/coind -datadir=. stop```
 
 ## Test
 run ```$docker exec -it waykicoind-test ./coind -datadir=. getpeerinfo```
