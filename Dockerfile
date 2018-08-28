@@ -1,5 +1,5 @@
 FROM ubuntu:14.04
-MAINTAINER Dragon Master <tigerich@163.com>
+MAINTAINER Dragon Master <tigerich at 163 dot com>
 
 ENV HOME /wicc
 ENV DEBIAN_FRONTEND noninteractive
