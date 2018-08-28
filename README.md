@@ -3,8 +3,8 @@ Run waykichain coind in docker!
 
 ## Build the waykicoind docker
 ### method-1: build from Dockerfile
-
-```sh ./bin/build-waykicoind.sh```
+1. ```git clone https://github.com/WaykiChain/docker-waykicoind.git```
+1. ```cd docker-waykicoind && sh ./bin/build-waykicoind.sh```
 
 ### method-2: pull from GitLab docker registry
 1. ```docker login registry.gitlab.com```
