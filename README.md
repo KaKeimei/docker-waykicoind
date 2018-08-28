@@ -7,8 +7,8 @@ Run waykichain coind in docker!
 ```sh ./bin/build-waykicoind.sh```
 
 ### method-2: pull from GitLab docker registry
-1. docker login registry.gitlab.com
-1. docker pull registry.gitlab.com/waykichain-public/dockers/waykicoind
+1. ```docker login registry.gitlab.com```
+1. ```docker pull registry.gitlab.com/waykichain-public/dockers/waykicoind```
 
 ## Install WaykiChain TestNode Docker container
 1. cd into the home director where conf and data dirs exist
