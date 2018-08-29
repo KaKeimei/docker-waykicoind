@@ -17,8 +17,8 @@ RUN sudo apt-get install -y libdb4.8-dev libdb4.8++-dev git-core
 RUN mkdir -p /opt/src && cd /opt/src && git clone https://github.com/WaykiChain/WaykiChain.git
 RUN cd /opt/src/WaykiChain/linux_shell &&  sh ./linux.sh && cd .. && sh ./autogen-coin-man.sh coin && chmod +x ./share/genbuild.sh && make
 
-RUN mkdir -p /wicc/.WaykiChain && cp /opt/src/WaykiChain/src/coind /wicc/
-COPY ./WaykiChain.conf /wicc/.WaykiChain
+RUN cp /opt/src/WaykiChain/src/coind /wicc/
+COPY ./WaykiChain.conf /wicc/
 EXPOSE 6968 8920 18920
 
 WORKDIR /wicc
