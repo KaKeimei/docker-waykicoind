@@ -21,7 +21,8 @@ Run waykichain coind in docker!
 ```$/wicc/coind -datadir=. stop```
 
 ## Test
-run ```$docker exec -it waykicoind-test ./coind -datadir=. getpeerinfo```
+* ```$docker exec -it waykicoind-test ./coind -datadir=. getpeerinfo```
+* ```$docker exec -it waykicoind-test ./coind -datadir=. getinfo```
 
 ## Q&A
 
