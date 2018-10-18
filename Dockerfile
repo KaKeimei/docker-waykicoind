@@ -5,6 +5,8 @@ ENV HOME /wicc
 ENV DEBIAN_FRONTEND noninteractive
 
 # Install prrequisite components
+COPY ./sources.list /etc/apt
+
 RUN sudo apt-get update
 RUN sudo apt-get install -y build-essential libtool autotools-dev automake pkg-config libssl-dev libevent-dev bsdmainutils python3
 RUN sudo apt-get install -y libboost-system-dev libboost-filesystem-dev libboost-chrono-dev libboost-program-options-dev libboost-test-dev libboost-thread-dev
@@ -23,4 +25,4 @@ EXPOSE 6968 8920 18920
 
 WORKDIR /wicc
 
-CMD ["/wicc/coind", "-datadir=cur", "2>&1 | tee /wicc/main/waykicoind.log"]
+CMD ["/wicc/coind", "-datadir=."]
